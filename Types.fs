@@ -6,18 +6,22 @@ open System.Text.Json.Serialization
 type Song =
   { Timestamp: DateTime
     MsPlayed: uint32
-    SpotifyUri: string
     SongName: string
     ArtistName: string
     AlbumName: string
+    SpotifyUri: string option
     Offline: bool }
 
 type Episode =
   { Timestamp: DateTime
     MsPlayed: uint32
-    SpotifyUri: string
     EpisodeName: string
-    ShowName: string }
+    ShowName: string
+    SpotifyUri: string option }
+
+type Entry =
+  | Song of Song
+  | Episode of Episode
 
 type RawEntry =
   { [<JsonPropertyName("ts")>]

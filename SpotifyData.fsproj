@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Compile Include="Types.fs" />
-    <Compile Include="JsonUtils.fs" />
+    <Compile Include="IOUtils.fs" />
     <Compile Include="Conversion.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>

@@ -3,45 +3,45 @@ namespace SpotifyData
 open System
 
 module Conversion =
-  let convertEntry entry =
+  let ConvertEntry entry =
     async {
       match entry.SongName, entry.ArtistName, entry.AlbumName with
       | Some songName, Some artistName, Some albumName ->
         let song =
           { Timestamp = DateTime.Parse(entry.Timestamp)
             MsPlayed = entry.MsPlayed
-            SpotifyUri = entry.SpotifyTrackUri |> Option.defaultValue ""
             SongName = songName
             ArtistName = artistName
             AlbumName = albumName
+            SpotifyUri = entry.SpotifyTrackUri
             Offline = entry.Offline }
 
-        return Some(Choice1Of2 song)
+        return Some(Song song)
       | _ ->
         match entry.EpisodeName, entry.ShowName with
         | Some episodeName, Some showName ->
           let episode =
             { Timestamp = DateTime.Parse(entry.Timestamp)
               MsPlayed = entry.MsPlayed
-              SpotifyUri = entry.SpotifyEpisodeUri |> Option.defaultValue ""
               EpisodeName = episodeName
-              ShowName = showName }
+              ShowName = showName
+              SpotifyUri = entry.SpotifyEpisodeUri }
 
-          return Some(Choice2Of2 episode)
+          return Some(Episode episode)
         | _ -> return None
     }
 
-  let convertEntries (entries: RawEntry[]) =
+  let ConvertEntries (entries: RawEntry[]) =
     async {
-      let! results = entries |> Array.map convertEntry |> Async.Parallel
+      let! results = entries |> Array.map ConvertEntry |> Async.Parallel
 
       let songs, episodes =
         results
         |> Array.fold
           (fun (songs, episodes) result ->
             match result with
-            | Some(Choice1Of2 song) -> song :: songs, episodes
-            | Some(Choice2Of2 episode) -> songs, episode :: episodes
+            | Some(Song song) -> song :: songs, episodes
+            | Some(Episode episode) -> songs, episode :: episodes
             | None -> songs, episodes)
           ([], [])
 
