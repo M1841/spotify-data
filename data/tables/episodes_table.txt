@@ -1,0 +1,147 @@
+Timestamp        | Show                                      | Episode                                                             
+---------------- | ----------------------------------------- | --------------------------------------------------------------------
+2019/02/08 23:14 | Pure Trance Radio Podcast with Solarstone | Pure Trance Radio Podcast 175                                       
+2019/06/27 16:37 | Phoenix Radio                             | Phoenix Radio 001                                                   
+2019/06/27 20:01 | Phoenix Radio                             | Phoenix Radio 001                                                   
+2019/06/28 13:17 | Phoenix Radio                             | Phoenix Radio 001                                                   
+2019/10/29 17:08 | Office Ladies                             | Office Ladies Trailer                                               
+2020/01/25 22:03 | The Cymatics Show                         | Virtual Riot | The Cymatics Show #029                               
+2021/04/06 00:40 | Sleep Deprived Podcast                    | Sleep Deprived Podcast #17                                          
+2021/04/06 01:29 | Sleep Deprived Podcast                    | Sleep Deprived Podcast #18                                          
+2021/04/06 02:26 | Sleep Deprived Podcast                    | Sleep Deprived Podcast #18                                          
+2021/04/06 02:36 | Sleep Deprived Podcast                    | Sleep Deprived Podcast #18                                          
+2021/04/06 02:38 | Sleep Deprived Podcast                    | Sleep Deprived Podcast #19                                          
+2021/04/06 12:40 | Philosophize This!                        | Episode #001 ... Presocratic Philosophy - Ionian                    
+2021/04/06 15:20 | Philosophize This!                        | Episode #001 ... Presocratic Philosophy - Ionian                    
+2021/04/06 16:00 | Philosophize This!                        | Episode #002 ... Presocratic Philosophy - Italian                   
+2021/04/06 16:00 | Philosophize This!                        | Episode #002 ... Presocratic Philosophy - Italian                   
+2021/04/06 18:03 | Sleep Deprived Podcast                    | Sleep Deprived Podcast #19                                          
+2021/04/06 18:03 | Sleep Deprived Podcast                    | Sleep Deprived Podcast #19                                          
+2021/04/06 19:11 | Sleep Deprived Podcast                    | Sleep Deprived Podcast #20                                          
+2021/04/06 20:49 | Sleep Deprived Podcast                    | Sleep Deprived Podcast #21                                          
+2021/04/06 21:08 | Philosophize This!                        | Episode #002 ... Presocratic Philosophy - Italian                   
+2021/04/06 23:08 | Philosophize This!                        | Episode #001 ... Presocratic Philosophy - Ionian                    
+2021/04/07 16:11 | Philosophize This!                        | Episode #003 ... Socrates and the Sophists                          
+2021/04/08 15:35 | Philosophize This!                        | Episode #003 ... Socrates and the Sophists                          
+2021/04/26 20:28 | Very Really Good                          | Episode 1: Raven Baxter Would Be A Good YouTuber                    
+2021/04/26 20:28 | Very Really Good                          | Episode 1: Raven Baxter Would Be A Good YouTuber                    
+2021/04/26 21:33 | The Misfits Podcast                       | #0 - Pilot                                                          
+2021/04/26 23:12 | The Misfits Podcast                       | #1 - The Poland Story                                               
+2021/04/27 12:48 | The Misfits Podcast                       | #1 - The Poland Story                                               
+2021/04/27 20:48 | The Misfits Podcast                       | #1 - The Poland Story                                               
+2021/04/27 22:43 | The Misfits Podcast                       | #1 - The Poland Story                                               
+2021/04/28 12:59 | The Misfits Podcast                       | #2 - The Mild High Club                                             
+2021/04/28 13:12 | The Misfits Podcast                       | #2 - The Mild High Club                                             
+2021/04/28 16:44 | The Misfits Podcast                       | #3 - Don't Do Drugs                                                 
+2021/04/28 16:49 | The Misfits Podcast                       | #3 - Don't Do Drugs                                                 
+2021/04/28 16:49 | The Misfits Podcast                       | #3 - Don't Do Drugs                                                 
+2021/04/28 19:42 | The Misfits Podcast                       | #4 - FORTNITE SUCKS                                                 
+2021/04/28 19:59 | The Misfits Podcast                       | #4 - FORTNITE SUCKS                                                 
+2021/04/28 21:09 | The Misfits Podcast                       | #5 - RaccoonEggs                                                    
+2021/04/28 22:52 | The Misfits Podcast                       | #6 - No More Parties in LA                                          
+2022/02/10 16:32 | The Mr. Bill Podcast                      | MBP #67 Matt Tytel                                                  
+2022/02/10 16:36 | The Mr. Bill Podcast                      | MBP #67 Matt Tytel                                                  
+2022/02/26 10:42 | Dimension 20                              | The Unsleeping City | Season 1 | Ep. 1 | Start Spreading the News   
+2022/02/26 12:02 | Dimension 20                              | The Unsleeping City | Season 1 | Ep. 1 | Start Spreading the News   
+2022/02/26 14:03 | Dimension 20                              | The Unsleeping City | Season 1 | Ep. 2 | Mutant Santa Melee         
+2022/02/26 19:40 | Dimension 20                              | The Unsleeping City | Season 1 | Ep. 3 | Pigeon Plus Ones           
+2022/02/26 21:16 | Dimension 20                              | The Unsleeping City | Season 1 | Ep. 4 | Scramble in the Sewers     
+2022/02/27 08:45 | Dimension 20                              | The Unsleeping City | Season 1 | Ep. 5 | A New York Wedding         
+2022/02/27 19:21 | Dimension 20                              | The Unsleeping City | Season 1 | Ep. 7 | We Need to Talk About Pete 
+2022/03/03 21:58 | Not Another D&D Podcast                   | Welcome to Not Another D&D Podcast! (Meet the Party)                
+2022/03/06 09:44 | Mind Architect                            | Sezonul 3, Episodul 10 - Ce ne spunem când nu vorbim, ci ascultăm   
+2022/03/06 09:44 | Mind Architect                            | Sezonul 3, Episodul 10 - Ce ne spunem când nu vorbim, ci ascultăm   
+2022/03/26 17:41 | Critical Role                             | Vox Machina Ep. 1 - Arrival at Kraghammer                           
+2022/03/26 17:43 | The SpellCast D&D                         | Episode 0: The Sentinel Saga - "The More You Know" Intro            
+2022/03/26 17:47 | Girls Who Don‘t DnD                       | S01E01: Throw it into the sea - GWDDnD - Ch1: The Amnesia Chronicles
+2022/03/26 17:58 | Not Another D&D Podcast                   | Welcome to Not Another D&D Podcast! (Meet the Party)                
+2022/03/26 19:01 | Not Another D&D Podcast                   | Ep. 1: Green Teens Gone (The Moonstone Saga)                        
+2022/04/23 16:41 | Critical Role                             | C3E1 The Draw of Destiny                                            
+2022/04/24 09:47 | Dimension 20                              | Fantasy High | Ep. 1 | The Beginning Begins                         
+2022/04/24 11:30 | Dimension 20                              | Fantasy High | Ep. 2 | Clash of the Corn Cuties                     
+2022/04/24 16:15 | Dimension 20                              | Fantasy High | Ep. 3 | After the Afterlife                          
+2022/04/27 16:59 | Dimension 20                              | Fantasy High | Ep. 11 | Cool Kids, Cold Case                        
+2022/05/04 15:43 | Dimension 20                              | Fantasy High | Ep. 16 | Prompocalypse                               
+2022/05/20 22:39 | Disturbed: True Horror Stories            | Trailer                                                             
+2022/06/02 23:00 | The Good Place: The Podcast               | Welcome! Everything is Fine                                         
+2022/06/02 23:09 | The Good Place: The Podcast               | Ch. 1: Michael Schur                                                
+2022/06/18 15:15 | Dimension 20                              | Getting the Full Dimension 20 Experience (with Brennan)             
+2022/06/29 16:32 | Brooklyn Nine-Nine: The Podcast           | Introducing Brooklyn Nine-Nine: The Podcast                         
+2022/06/29 16:33 | Brooklyn Nine-Nine: The Podcast           | Part 1: Getting the Squad Together                                  
+2022/06/29 20:32 | Brooklyn Nine-Nine: The Podcast           | Part 1: Getting the Squad Together                                  
+2022/06/29 22:42 | Brooklyn Nine-Nine: The Podcast           | Part 2: Relationship Goals                                          
+2022/06/29 23:09 | Brooklyn Nine-Nine: The Podcast           | Part 2: Relationship Goals                                          
+2022/06/30 00:10 | Brooklyn Nine-Nine: The Podcast           | Part 3: Be Our Guest... Star                                        
+2022/06/30 00:22 | Brooklyn Nine-Nine: The Podcast           | Part 4: Truth in Comedy                                             
+2022/06/30 15:02 | Brooklyn Nine-Nine: The Podcast           | Part 2: Relationship Goals                                          
+2022/07/03 21:12 | Reading Dune                              | CHAPTER 1 - The Beginning is a Very Delicate Place to Start         
+2022/07/03 22:22 | Brooklyn Nine-Nine: The Podcast           | Part 4: Truth in Comedy                                             
+2022/07/04 12:19 | Brooklyn Nine-Nine: The Podcast           | Part 5: Ain’t No Heist Like a Halloween Heist                       
+2022/07/04 12:48 | Brooklyn Nine-Nine: The Podcast           | Part 5: Ain’t No Heist Like a Halloween Heist                       
+2022/07/04 13:14 | Brooklyn Nine-Nine: The Podcast           | Part 6: From Flatline to Back Nine                                  
+2022/07/04 19:08 | Brooklyn Nine-Nine: The Podcast           | Part 5: Ain’t No Heist Like a Halloween Heist                       
+2022/07/04 20:14 | Brooklyn Nine-Nine: The Podcast           | Part 6: From Flatline to Back Nine                                  
+2022/07/05 01:02 | Brooklyn Nine-Nine: The Podcast           | Part 6: From Flatline to Back Nine                                  
+2022/07/05 01:02 | Brooklyn Nine-Nine: The Podcast           | Part 6: From Flatline to Back Nine                                  
+2022/07/05 01:20 | Brooklyn Nine-Nine: The Podcast           | Part 6: From Flatline to Back Nine                                  
+2022/07/05 04:17 | Brooklyn Nine-Nine: The Podcast           | Bonus Episode: Fans’ Questions Answered                             
+2022/07/10 20:06 | GOONS                                     | #1 - Madison Beer, PAX East, High Stories                           
+2022/07/10 20:39 | OfflineTV Podcast                         | OfflineTV Podcast #12 - Brodin Plett, Disguised Toast               
+2022/07/12 00:23 | OfflineTV Podcast                         | OfflineTV Podcast #12 - Brodin Plett, Disguised Toast               
+2022/07/12 00:23 | OfflineTV Podcast                         | OfflineTV Podcast #12 - Brodin Plett, Disguised Toast               
+2022/07/12 21:01 | OfflineTV Podcast                         | OfflineTV Podcast #12 - Brodin Plett, Disguised Toast               
+2022/07/12 21:05 | OfflineTV Podcast                         | OfflineTV Podcast #13 - Valkyrae, Disguised Toast                   
+2022/07/15 16:18 | Sleep Deprived Podcast                    | Sleep Deprived Podcast #22                                          
+2022/07/16 13:31 | Sleep Deprived Podcast                    | Sleep Deprived Podcast #22                                          
+2022/07/20 20:25 | Sugbo Sadbois                             | Episode 0 - Lutang nga Sabaw                                        
+2022/07/20 21:40 | Sad Boyz                                  | 36 Questions to Fall in Love                                        
+2022/07/20 22:25 | Sad Boyz                                  | Leaving Home w/ Simone Giertz                                       
+2022/07/21 01:57 | Sad Boyz                                  | Leaving Home w/ Simone Giertz                                       
+2022/07/21 01:59 | Sad Boyz                                  | Growing Up Online                                                   
+2022/07/21 13:49 | Sad Boyz                                  | Growing Up Online                                                   
+2022/07/21 16:15 | Sad Boyz                                  | Growing Up Online                                                   
+2022/07/21 17:15 | Sad Boyz                                  | Growing Up Online                                                   
+2022/07/21 21:05 | Sad Boyz                                  | Growing Up Online                                                   
+2022/07/21 22:10 | Sad Boyz                                  | "But where are you REALLY from?" w/ Mayuko                          
+2022/07/21 22:35 | Sad Boyz                                  | Making a (big) change w/ Drew Scanlon                               
+2022/07/22 10:56 | Sad Boyz                                  | Making a (big) change w/ Drew Scanlon                               
+2022/07/24 20:34 | Sad Boyz                                  | Making a (big) change w/ Drew Scanlon                               
+2022/07/24 21:21 | Sad Boyz                                  | Biggest Fears w/ Heather Wilder                                     
+2022/07/25 20:17 | Sad Boyz                                  | Biggest Fears w/ Heather Wilder                                     
+2022/07/25 20:56 | Sad Boyz                                  | Awkward Thanksgiving Dinner Conversations                           
+2022/08/06 20:18 | Sad Boyz                                  | Awkward Thanksgiving Dinner Conversations                           
+2022/08/06 21:30 | Sad Boyz                                  | Cleaning House                                                      
+2022/08/07 00:44 | Sad Boyz                                  | 2018 Predictions                                                    
+2022/08/07 10:13 | Sad Boyz                                  | 2018 Predictions                                                    
+2022/08/07 20:53 | Sad Boyz                                  | 2018 Predictions                                                    
+2022/08/07 20:55 | Sad Boyz                                  | Crying w/ Mayuko                                                    
+2022/08/10 20:16 | Sad Boyz                                  | Crying w/ Mayuko                                                    
+2022/08/11 20:04 | Sad Boyz                                  | Crying w/ Mayuko                                                    
+2022/08/11 20:23 | Dimension 20                              | Fantasy High | Ep. 1 | The Beginning Begins                         
+2022/08/11 21:01 | Sad Boyz                                  | Bullying                                                            
+2022/08/13 19:31 | Sad Boyz                                  | Bullying                                                            
+2022/08/13 20:11 | Sad Boyz                                  | Burnout                                                             
+2022/08/13 20:16 | Sad Boyz                                  | Guilt                                                               
+2022/08/14 20:43 | Sad Boyz                                  | Guilt                                                               
+2022/08/14 21:04 | Sad Boyz                                  | Depression w/ Tyler May                                             
+2022/08/15 20:43 | Sad Boyz                                  | Depression w/ Tyler May                                             
+2022/08/20 19:09 | Sad Boyz                                  | Depression w/ Tyler May                                             
+2022/08/20 19:26 | Sad Boyz                                  | Social Anxiety w/ Lauren Shippen                                    
+2022/09/11 20:17 | Sad Boyz                                  | Social Anxiety w/ Lauren Shippen                                    
+2022/09/11 20:18 | Sad Boyz                                  | Social Anxiety w/ Lauren Shippen                                    
+2022/09/12 18:01 | Sad Boyz                                  | Social Anxiety w/ Lauren Shippen                                    
+2022/09/12 18:11 | Sad Boyz                                  | Social Anxiety w/ Lauren Shippen                                    
+2022/09/16 16:37 | Sad Boyz                                  | Social Anxiety w/ Lauren Shippen                                    
+2022/09/16 16:44 | Sad Boyz                                  | Black Enough? 😬 w/ Erica Joy Baker                                 
+2022/09/23 17:13 | Sad Boyz                                  | Black Enough? 😬 w/ Erica Joy Baker                                 
+2022/09/23 17:20 | Sad Boyz                                  | 3 More Questions To Fall In Love                                    
+2022/09/23 17:20 | Dimension 20                              | The Unsleeping City | Season 1 | Ep. 2 | Mutant Santa Melee         
+2022/09/23 18:13 | Sad Boyz                                  | 3 More Questions To Fall In Love                                    
+2022/09/23 18:13 | Sad Boyz                                  | Anime                                                               
+2022/09/23 18:34 | Sad Boyz                                  | College                                                             
+2022/09/24 16:49 | Sad Boyz                                  | College                                                             
+2022/09/25 17:37 | Sad Boyz                                  | College                                                             
+2022/09/30 12:32 | Sad Boyz                                  | Hard Questions                                                      
+2022/12/11 14:41 | Dimension 20                              | Fantasy High | Ep. 1 | The Beginning Begins                         
+2022/12/12 01:08 | Dimension 20                              | Fantasy High | Ep. 1 | The Beginning Begins                         
+2022/12/12 10:31 | Dimension 20                              | Fantasy High | Ep. 1 | The Beginning Begins                         

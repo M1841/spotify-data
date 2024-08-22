@@ -19,11 +19,11 @@ type Episode =
     ShowName: string
     SpotifyUri: string option }
 
-type Entry =
+type Item =
   | Song of Song
   | Episode of Episode
 
-type RawEntry =
+type RawItem =
   { [<JsonPropertyName("ts")>]
     Timestamp: string
     [<JsonPropertyName("ms_played")>]

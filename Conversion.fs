@@ -3,37 +3,37 @@ namespace SpotifyData
 open System
 
 module Conversion =
-  let ConvertEntry entry =
+  let ConvertItem item =
     async {
-      match entry.SongName, entry.ArtistName, entry.AlbumName with
+      match item.SongName, item.ArtistName, item.AlbumName with
       | Some songName, Some artistName, Some albumName ->
         let song =
-          { Timestamp = DateTime.Parse(entry.Timestamp)
-            MsPlayed = entry.MsPlayed
+          { Timestamp = DateTime.Parse(item.Timestamp)
+            MsPlayed = item.MsPlayed
             SongName = songName
             ArtistName = artistName
             AlbumName = albumName
-            SpotifyUri = entry.SpotifyTrackUri
-            Offline = entry.Offline }
+            SpotifyUri = item.SpotifyTrackUri
+            Offline = item.Offline }
 
         return Some(Song song)
       | _ ->
-        match entry.EpisodeName, entry.ShowName with
+        match item.EpisodeName, item.ShowName with
         | Some episodeName, Some showName ->
           let episode =
-            { Timestamp = DateTime.Parse(entry.Timestamp)
-              MsPlayed = entry.MsPlayed
+            { Timestamp = DateTime.Parse(item.Timestamp)
+              MsPlayed = item.MsPlayed
               EpisodeName = episodeName
               ShowName = showName
-              SpotifyUri = entry.SpotifyEpisodeUri }
+              SpotifyUri = item.SpotifyEpisodeUri }
 
           return Some(Episode episode)
         | _ -> return None
     }
 
-  let ConvertEntries (entries: RawEntry[]) =
+  let ConvertItems (entries: RawItem[]) =
     async {
-      let! results = entries |> Array.map ConvertEntry |> Async.Parallel
+      let! results = entries |> Array.map ConvertItem |> Async.Parallel
 
       let songs, episodes =
         results
