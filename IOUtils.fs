@@ -2,6 +2,7 @@ namespace SpotifyData
 
 open System.IO
 open System.Text.Json
+open SpotifyData.Format
 
 module IOUtils =
   let ReadJson<'T> filePath =
@@ -33,87 +34,65 @@ module IOUtils =
     }
 
   let WriteSongsTable (filePath: string) (songs: Song list) =
-    let maxTitleLength =
-      songs
-      |> List.maxBy (fun song -> song.SongName.Length)
-      |> fun song -> song.SongName.Length
-
-    let maxArtistLength =
-      songs
-      |> List.maxBy (fun song -> song.ArtistName.Length)
-      |> fun song -> song.ArtistName.Length
-
     use writer = new StreamWriter(filePath)
 
-    let paddedHeader1 = "Timestamp".PadRight 16
-    let paddedHeader2 = "Artist".PadRight maxArtistLength
-    let paddedHeader3 = "Song".PadRight maxTitleLength
-    writer.WriteLine(sprintf "%s | %s | %s" paddedHeader1 paddedHeader2 paddedHeader3)
+    let maxArtistNameLength, maxSongNameLength =
+      songs
+      |> List.fold (fun (mANL, mSNL) s -> (max mANL s.ArtistName.Length, max mSNL s.SongName.Length)) (0, 0)
 
-    let separator1 = String.replicate 16 "-"
-    let separator2 = String.replicate maxArtistLength "-"
-    let separator3 = String.replicate maxTitleLength "-"
-    writer.WriteLine(sprintf "%s | %s | %s" separator1 separator2 separator3)
+    [ ("Timestamp", 16)
+      ("Artist", maxArtistNameLength)
+      ("Song", maxSongNameLength) ]
+    |> FormatLine
+    |> writer.WriteLine
+
+    [ 16; maxArtistNameLength; maxSongNameLength ]
+    |> List.map (fun l -> String.replicate l "-")
+    |> String.concat " | "
+    |> writer.WriteLine
 
     try
-      for song in songs do
-        let timestampString =
-          sprintf
-            "%04d/%02d/%02d %02d:%02d"
-            song.Timestamp.Year
-            song.Timestamp.Month
-            song.Timestamp.Day
-            song.Timestamp.Hour
-            song.Timestamp.Minute
+      songs
+      |> List.iter (fun song ->
+        let timestampStr = song.Timestamp |> FormatTimestamp
 
-        let paddedTitle = song.SongName.PadRight maxTitleLength
-        let paddedArtist = song.ArtistName.PadRight maxArtistLength
-
-        // printfn "%s - %s" song.ArtistName song.SongName
-
-        writer.WriteLine(sprintf "%s | %s | %s" timestampString paddedArtist paddedTitle)
-    with ex ->
-      printfn "Unexpected error: %s" ex.Message
+        [ (timestampStr, 16)
+          (song.ArtistName, maxArtistNameLength)
+          (song.SongName, maxSongNameLength) ]
+        |> FormatLine
+        |> writer.WriteLine)
+    with
+    | :? IOException as ex -> printfn "I/O error: %s" ex.Message
+    | ex -> printfn "Unexpected error: %s" ex.Message
 
   let WriteEpisodesTable (filePath: string) (episodes: Episode list) =
-    let maxEpisodeNameLength =
-      episodes
-      |> List.maxBy (fun e -> e.EpisodeName.Length)
-      |> fun e -> e.EpisodeName.Length
-
-    let maxShowNameLength =
-      episodes
-      |> List.maxBy (fun e -> e.ShowName.Length)
-      |> fun e -> e.ShowName.Length
-
     use writer = new StreamWriter(filePath)
 
-    let paddedHeader1 = "Timestamp".PadRight 16
-    let paddedHeader2 = "Show".PadRight maxShowNameLength
-    let paddedHeader3 = "Episode".PadRight maxEpisodeNameLength
-    writer.WriteLine(sprintf "%s | %s | %s" paddedHeader1 paddedHeader2 paddedHeader3)
+    let maxShowNameLength, maxEpisodeNameLength =
+      episodes
+      |> List.fold (fun (mSNL, mENL) e -> (max mSNL e.ShowName.Length, max mENL e.EpisodeName.Length)) (0, 0)
 
-    let separator1 = String.replicate 16 "-"
-    let separator2 = String.replicate maxShowNameLength "-"
-    let separator3 = String.replicate maxEpisodeNameLength "-"
-    writer.WriteLine(sprintf "%s | %s | %s" separator1 separator2 separator3)
+    [ ("Timestamp", 16)
+      ("Show", maxShowNameLength)
+      ("Episode", maxEpisodeNameLength) ]
+    |> FormatLine
+    |> writer.WriteLine
+
+    [ 16; maxShowNameLength; maxEpisodeNameLength ]
+    |> List.map (fun l -> String.replicate l "-")
+    |> String.concat " | "
+    |> writer.WriteLine
 
     try
-      for episode in episodes do
-        let timestampString =
-          sprintf
-            "%04d/%02d/%02d %02d:%02d"
-            episode.Timestamp.Year
-            episode.Timestamp.Month
-            episode.Timestamp.Day
-            episode.Timestamp.Hour
-            episode.Timestamp.Minute
+      episodes
+      |> List.iter (fun episode ->
+        let timestampStr = episode.Timestamp |> FormatTimestamp
 
-        let paddedEpisodeName = episode.EpisodeName.PadRight(maxEpisodeNameLength)
-        let paddedShowName = episode.ShowName.PadRight(maxShowNameLength)
-
-        // printfn "%s - %s" episode.ShowName episode.EpisodeName
-
-        writer.WriteLine(sprintf "%s | %s | %s" timestampString paddedShowName paddedEpisodeName)
-    with ex ->
-      printfn "Unexpected error: %s" ex.Message
+        [ (timestampStr, 16)
+          (episode.ShowName, maxShowNameLength)
+          (episode.EpisodeName, maxEpisodeNameLength) ]
+        |> FormatLine
+        |> writer.WriteLine)
+    with
+    | :? IOException as ex -> printfn "I/O error: %s" ex.Message
+    | ex -> printfn "Unexpected error: %s" ex.Message

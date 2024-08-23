@@ -31,9 +31,9 @@ module Conversion =
         | _ -> return None
     }
 
-  let ConvertItems (entries: RawItem[]) =
+  let ConvertItems (items: RawItem[]) =
     async {
-      let! results = entries |> Array.map ConvertItem |> Async.Parallel
+      let! results = items |> Array.map ConvertItem |> Async.Parallel
 
       let songs, episodes =
         results

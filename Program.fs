@@ -2,34 +2,48 @@
 open SpotifyData.IOUtils
 open SpotifyData.Conversion
 
+let GetItemsRaw =
+  let filePaths = [ for i in 0..13 -> sprintf "data/raw/endsong_%d.json" i ]
+
+  let rawItems =
+    filePaths
+    |> List.map ReadJson<RawItem[]>
+    |> Async.Parallel
+    |> Async.RunSynchronously
+    |> Array.choose id
+    |> Array.concat
+
+  ConvertItems rawItems
+
+let WriteItemsJson (songs, episodes) =
+  [| async { do! songs |> WriteJson "data/extracted/songs.json" }
+     async { do! episodes |> WriteJson "data/extracted/episodes.json" } |]
+  |> Async.Parallel
+  |> Async.RunSynchronously
+
+let WriteItemsTable ((songs: Song list), (episodes: Episode list)) =
+  [ async {
+      songs
+      |> List.filter (fun s -> s.MsPlayed > uint32 30000)
+      |> List.sortBy (fun s -> s.Timestamp)
+      |> WriteSongsTable "data/tables/songs_table.txt"
+    }
+    async {
+      episodes
+      |> List.filter (fun e -> e.MsPlayed > uint32 3000)
+      |> List.sortBy (fun e -> e.Timestamp)
+      |> WriteEpisodesTable "data/tables/episodes_table.txt"
+    } ]
+  |> Async.Parallel
+  |> Async.RunSynchronously
+
 [<EntryPoint>]
-let main _ =
+let Main _ =
   async {
-    let filePaths = [ for i in 0..13 -> sprintf "data/raw/endsong_%d.json" i ]
+    let! songs, episodes = GetItemsRaw
+    (songs, episodes) |> WriteItemsJson |> ignore
 
-    let rawEntries =
-      filePaths
-      |> List.map ReadJson<RawItem[]>
-      |> Async.Parallel
-      |> Async.RunSynchronously
-      |> Array.choose id
-      |> Array.concat
-
-    let! songs, episodes = ConvertItems rawEntries
-
-    // do! songs |> WriteJson<Song list> "data/extracted/songs.json"
-    // do! episodes |> WriteJson<Episode list> "data/extracted/episodes.json"
-
-    songs
-    |> List.filter (fun s -> s.MsPlayed > uint32 30000)
-    |> List.sortBy (fun s -> s.Timestamp)
-    |> WriteSongsTable "data/tables/songs_table.txt"
-
-    episodes
-    |> List.filter (fun e -> e.MsPlayed > uint32 3000)
-    |> List.sortBy (fun e -> e.Timestamp)
-    |> WriteEpisodesTable "data/tables/episodes_table.txt"
-
+    (songs, episodes) |> WriteItemsTable |> ignore
     return 0
   }
   |> Async.RunSynchronously
